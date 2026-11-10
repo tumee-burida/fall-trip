@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+
+<html lang="ko"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100..900&family=Noto+Serif:wght@100..900&display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"outline-variant":"#ddc1b7","on-secondary-container":"#714800","on-primary":"#ffffff","surface-variant":"#e7e2da","inverse-on-surface":"#f5f0e8","on-surface-variant":"#56423b","surface-dim":"#ded9d2","on-secondary-fixed":"#2a1800","surface-container-lowest":"#ffffff","on-surface":"#1d1c17","on-error-container":"#93000a","outline":"#89726a","on-background":"#1d1c17","tertiary-fixed":"#f0e0d3","on-tertiary-container":"#fff3ea","on-secondary":"#ffffff","surface":"#fef9f1","primary":"#943c14","on-tertiary-fixed-variant":"#4f453c","inverse-surface":"#32302b","on-tertiary-fixed":"#221a13","primary-container":"#b4532a","error":"#ba1a1a","secondary-fixed-dim":"#ffb959","tertiary":"#61564c","secondary-fixed":"#ffddb6","on-tertiary":"#ffffff","surface-bright":"#fef9f1","tertiary-fixed-dim":"#d3c4b8","on-error":"#ffffff","background":"#fef9f1","surface-container-high":"#ece8e0","primary-fixed-dim":"#ffb599","on-primary-container":"#fff2ee","surface-container":"#f2ede5","surface-container-low":"#f8f3eb","error-container":"#ffdad6","primary-fixed":"#ffdbce","secondary":"#845400","secondary-container":"#ffb54d","on-primary-fixed-variant":"#7e2c03","inverse-primary":"#ffb599","on-primary-fixed":"#370e00","on-secondary-fixed-variant":"#643f00","surface-container-highest":"#e7e2da","surface-tint":"#9e421a","tertiary-container":"#7a6e64"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"margin":"2rem","space-xl":"3.5rem","space-md":"1.25rem","space-sm":"0.75rem","gutter":"1.5rem","space-xs":"0.5rem","space-lg":"2rem"},"fontFamily":{"headline-md":["Noto Serif"],"body-lg":["Be Vietnam Pro"],"label-sm":["Be Vietnam Pro"],"body-sm":["Be Vietnam Pro"],"display-mobile":["Noto Serif"],"body-md":["Be Vietnam Pro"],"label-md":["Be Vietnam Pro"],"label-lg":["Be Vietnam Pro"],"display":["Noto Serif"],"headline-lg":["Noto Serif"],"headline-sm":["Noto Serif"],"headline-lg-mobile":["Noto Serif"]},"fontSize":{"headline-md":["28px",{"lineHeight":"40px","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"30px","fontWeight":"400"}],"label-sm":["11px",{"lineHeight":"16px","fontWeight":"600"}],"body-sm":["14px",{"lineHeight":"22px","fontWeight":"400"}],"display-mobile":["36px",{"lineHeight":"48px","fontWeight":"400"}],"body-md":["16px",{"lineHeight":"26px","fontWeight":"400"}],"label-md":["13px",{"lineHeight":"18px","fontWeight":"500"}],"label-lg":["15px",{"lineHeight":"20px","fontWeight":"500"}],"display":["56px",{"lineHeight":"72px","fontWeight":"400"}],"headline-lg":["40px",{"lineHeight":"54px","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"32px","fontWeight":"500"}],"headline-lg-mobile":["28px",{"lineHeight":"38px","fontWeight":"400"}]}}}};</script></head><body class="bg-surface font-body-md text-on-surface antialiased"><header class="fixed top-0 w-full z-50 bg-surface/85 backdrop-blur-xl shadow-[0_2px_12px_-2px_rgba(47,42,38,0.05)]"><div class="h-20 max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between"><a class="flex items-center gap-space-xs group" data-path="home" href="#"><span class="material-symbols-outlined text-primary text-[28px]">eco</span><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight">가을동행</span></a><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-bold"><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="destinations" href="#">여행지</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="how-to-apply" href="#">신청 방법</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="reviews" href="#">후기</a><a class="font-body-md text-body-md text-on-surface-variant hover:text-on-surface transition-colors" data-path="inquiry" href="#">문의</a></nav><div class="flex items-center gap-space-md"><a class="bg-primary-container text-on-primary-container font-label-lg text-label-lg px-7 py-3 rounded-full shadow-[0_4px_12px_-2px_rgba(180,83,42,0.18)] hover:bg-primary transition-all inline-flex items-center justify-center" data-path="apply-form" href="#">여행 신청하기</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- 1. HERO SECTION -->
+<section class="relative w-full pt-10 pb-28 lg:pt-16 lg:pb-36 bg-surface overflow-hidden">
+<!-- Atmospheric Ambient Glows -->
+<div class="absolute top-1/4 -left-20 w-96 h-96 rounded-full bg-secondary-fixed/40 blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/3 -right-20 w-[420px] h-[420px] rounded-full bg-primary-fixed/30 blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+<!-- Left Hero Content -->
+<div class="lg:col-span-6 flex flex-col items-start pr-0 lg:pr-6">
+<!-- Seasonal Badge -->
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container text-primary font-label-md text-label-md mb-6 shadow-sm">
+<span class="text-base leading-none">🍂</span>
+<span class="font-medium tracking-tight">2024 가을 시즌 소모임 동행 모집</span>
+</div>
+<!-- Main Headline -->
+<h1 class="font-display text-display-mobile md:text-display text-on-surface tracking-tight leading-[1.25] mb-6">
+            올가을, 혼자 말고<br/>
+<span class="text-primary italic font-serif">함께</span> 걸어요
+          </h1>
+<!-- Subcopy -->
+<div class="space-y-1.5 mb-10 text-on-surface-variant font-body-lg text-body-lg">
+<p>취향 맞는 사람들과 떠나는 가을 소모임 여행</p>
+<p class="text-on-surface/80">여행지와 날짜만 고르면 일정과 동행은 저희가 준비해요</p>
+</div>
+<!-- CTA Pair -->
+<div class="flex flex-wrap items-center gap-4 w-full sm:w-auto">
+<a class="w-full sm:w-auto px-8 py-4 rounded-full bg-primary text-on-primary font-label-lg text-label-lg shadow-md hover:bg-primary-container hover:shadow-lg transition-all text-center inline-flex items-center justify-center gap-2 group" data-path="apply-form" href="#">
+<span>여행 신청하기</span>
+<span class="material-symbols-outlined text-[18px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+<a class="w-full sm:w-auto px-7 py-4 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-variant transition-all text-center" href="#destinations-section">
+              여행지 둘러보기
+            </a>
+</div>
+<!-- Subtle Trust Anchor -->
+<div class="mt-10 flex items-center gap-3 text-on-surface-variant font-label-sm text-label-sm">
+<div class="flex -space-x-2 overflow-hidden">
+<span class="inline-block h-7 w-7 rounded-full bg-primary-fixed flex items-center justify-center text-[10px] font-bold text-on-primary-fixed ring-2 ring-surface">민</span>
+<span class="inline-block h-7 w-7 rounded-full bg-secondary-fixed flex items-center justify-center text-[10px] font-bold text-on-secondary-fixed ring-2 ring-surface">준</span>
+<span class="inline-block h-7 w-7 rounded-full bg-surface-container-highest flex items-center justify-center text-[10px] font-bold text-on-surface-variant ring-2 ring-surface">서</span>
+</div>
+<span>이번 주 42명의 여행자가 가을 여정에 합류했습니다</span>
+</div>
+</div>
+<!-- Right Hero Visual -->
+<div class="lg:col-span-6 relative">
+<div class="relative w-full h-[460px] lg:h-[540px] rounded-3xl overflow-hidden shadow-2xl bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Group of four young adult Korean friends walking away down a sun-drenched autumn trail carpeted in amber fallen leaves. Golden warm sunlight filtering through brilliant red maple and bright yellow ginkgo canopy, soft cinematic depth of field, gentle autumn breeze, cozy seasonal knitwear in beige, brick red and camel tones, peaceful and nostalgic mood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB84JPajO_ypDjrw5gqoLp6OAb1AqkrBw0jP3FvAzQUYXuROF2kUJgPIb1drLZ8tRLAQUAx0YrPOFk0S-mWc85ydw3RYO7tqapVkZIqnyhS5PVPhUoEJlSCarYmypjTK8oy_vXIF1e-EzEXMsAMi1Cf14rl_u2G7WrCT4G-qrURiNO2SUkq-8yZu4Z_WInlyh0aK_oU5y_ENYuWkiB7fNZ9gaRQy9JdWaaoKOSnwPea"/>
+<!-- Atmospheric gradient overlay -->
+<div class="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent"></div>
+<!-- Picture Floating Note -->
+<div class="absolute bottom-6 left-6 right-6 p-4 rounded-2xl bg-surface/90 backdrop-blur-md shadow-lg flex items-center justify-between">
+<div class="flex items-center gap-3">
+<span class="w-10 h-10 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed">
+<span class="material-symbols-outlined text-[20px]">wb_sunny</span>
+</span>
+<div>
+<p class="font-headline-sm text-label-md text-on-surface">강원 오대산 선재길 단풍 동행</p>
+<p class="font-body-sm text-label-sm text-on-surface-variant">지난 주말 다녀온 14기 소모임의 기록</p>
+</div>
+</div>
+<span class="font-label-sm text-label-sm text-primary font-semibold px-3 py-1 bg-primary/10 rounded-full">만족도 5.0</span>
+</div>
+</div>
+<!-- Decorative Floating Autumn Leaf Stamp -->
+<div class="absolute -top-6 -right-6 w-20 h-20 rounded-full bg-surface-container-low shadow-md flex flex-col items-center justify-center rotate-12 pointer-events-none hidden sm:flex">
+<span class="text-xl">🍁</span>
+<span class="font-label-sm text-[10px] text-tertiary tracking-tighter mt-0.5">AUTUMN</span>
+</div>
+</div>
+</div>
+<!-- Floating Quick Application Bar (히어로 하단 오버랩 바) -->
+<div class="mt-12 lg:-mb-16 relative z-20">
+<form class="bg-surface-container-lowest rounded-3xl lg:rounded-full p-3 lg:p-4 shadow-xl flex flex-col lg:flex-row items-center gap-3">
+<!-- 1) 여행지 선택 드롭다운 -->
+<div class="w-full lg:w-1/3 flex items-center gap-3 px-5 py-3 rounded-full hover:bg-surface-container-low transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-primary text-[22px]">location_on</span>
+<div class="flex-1 min-w-0">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">여행지 선택</span>
+<select class="w-full bg-transparent font-label-lg text-label-lg text-on-surface font-medium focus:outline-none cursor-pointer appearance-none truncate" id="quick-destination">
+<option value="">여행지 선택 (예: 설악산, 순천만...)</option>
+<option value="seorak">설악산 주전골 단풍 트레킹</option>
+<option value="suncheon">순천만 은빛 갈대밭 & 낙안읍성</option>
+<option value="nami">남이섬 황금 은행나무길</option>
+<option value="daegwallyeong">대관령 가을 바람 솔숲길</option>
+</select>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<div class="hidden lg:block w-px h-8 bg-surface-variant"></div>
+<!-- 2) 날짜 선택 드롭다운/인풋 -->
+<div class="w-full lg:w-1/4 flex items-center gap-3 px-5 py-3 rounded-full hover:bg-surface-container-low transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-secondary text-[22px]">calendar_month</span>
+<div class="flex-1 min-w-0">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">일정 선택</span>
+<select class="w-full bg-transparent font-label-lg text-label-lg text-on-surface font-medium focus:outline-none cursor-pointer appearance-none truncate" id="quick-schedule">
+<option value="">날짜 선택 (11월 일정)</option>
+<option value="nov-w1">11월 1주차 (11.02 ~ 11.03)</option>
+<option value="nov-w2">11월 2주차 (11.07 ~ 11.08)</option>
+<option value="nov-w3">11월 3주차 (11.14 당일)</option>
+<option value="nov-w4">11월 4주차 (11.21 당일)</option>
+</select>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<div class="hidden lg:block w-px h-8 bg-surface-variant"></div>
+<!-- 3) 인원 선택 -->
+<div class="w-full lg:w-1/4 flex items-center gap-3 px-5 py-3 rounded-full hover:bg-surface-container-low transition-colors cursor-pointer group">
+<span class="material-symbols-outlined text-tertiary text-[22px]">group</span>
+<div class="flex-1 min-w-0">
+<span class="block font-label-sm text-label-sm text-on-surface-variant">참여 인원</span>
+<select class="w-full bg-transparent font-label-lg text-label-lg text-on-surface font-medium focus:outline-none cursor-pointer appearance-none truncate" id="quick-people">
+<option value="1">1인 (혼자 신청)</option>
+<option value="2">2인 (친구·동반 1인)</option>
+<option value="team">소규모 단체 문의</option>
+</select>
+</div>
+<span class="material-symbols-outlined text-on-surface-variant text-[18px]">expand_more</span>
+</div>
+<!-- 4) 신청하기 버튼 -->
+<div class="w-full lg:w-auto pl-1 pr-1 lg:pr-0">
+<button class="w-full lg:w-auto px-8 py-4 rounded-full bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-all flex items-center justify-center gap-2 whitespace-nowrap shadow-sm hover:shadow" id="quick-apply-btn" type="button">
+<span>신청하기</span>
+<span class="material-symbols-outlined text-[18px]">search</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- 2. TRUST METRICS BAR -->
+<section class="w-full bg-surface-container-low py-12 lg:py-16 relative">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-4 items-center">
+<!-- Metric 1: 누적 동행 -->
+<div class="flex items-center justify-center gap-5 px-4 text-center md:text-left">
+<div class="w-14 h-14 rounded-2xl bg-primary-fixed flex items-center justify-center text-on-primary-fixed shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">groups</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1 justify-center md:justify-start">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">1,200</span>
+<span class="font-headline-sm text-headline-sm text-primary font-medium">명+</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">함께 가을을 나눈 누적 동행자</p>
+</div>
+</div>
+<!-- Metric 2: 여행 만족도 -->
+<div class="flex items-center justify-center gap-5 px-4 text-center md:text-left border-y md:border-y-0 md:border-x border-surface-variant/70 py-6 md:py-0">
+<div class="w-14 h-14 rounded-2xl bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">star</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1 justify-center md:justify-start">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">4.9</span>
+<span class="font-body-md text-body-md text-on-surface-variant">/ 5.0</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">참가자 후기 평균 만족도</p>
+</div>
+</div>
+<!-- Metric 3: 진행한 여행 횟수 -->
+<div class="flex items-center justify-center gap-5 px-4 text-center md:text-left">
+<div class="w-14 h-14 rounded-2xl bg-surface-container-highest flex items-center justify-center text-on-surface-variant shadow-sm flex-shrink-0">
+<span class="material-symbols-outlined text-[28px]">explore</span>
+</div>
+<div>
+<div class="flex items-baseline gap-1 justify-center md:justify-start">
+<span class="font-headline-lg text-headline-lg text-on-surface font-bold">85</span>
+<span class="font-headline-sm text-headline-sm text-secondary font-medium">회</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">안전하게 마무리된 가을 동행 여정</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. EMPATHY & CONCERN SECTION -->
+<section class="w-full py-20 lg:py-28 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wider uppercase mb-3 block">Autumn Companion Story</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-4">
+          이런 마음, 있으셨죠?
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+          혼자 망설였던 가을 여행, 가을동행에서는 걱정 없이 편안해요.
+        </p>
+</div>
+<!-- 3 Empathy Problem Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Card 1 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-primary-fixed/60 flex items-center justify-center text-xl mb-6">
+              🍂
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 leading-snug">
+              "가을 여행 가고 싶은데 함께 갈 사람이 없어요"
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              친구들과 일정을 맞추기 어렵고, 혼자 떠나기엔 풍경 앞이 적적했던 그 마음을 따뜻하고 다정한 동행으로 채워드립니다.
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-variant/50 flex items-center gap-2 text-primary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>혼자 신청 비율 78% · 누구나 편안해요</span>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-secondary-fixed/60 flex items-center justify-center text-xl mb-6">
+              🗓️
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 leading-snug">
+              "일정 짜고 숙소 알아보는 게 너무 번거로워요"
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              최적의 단풍 절정 코스 기획부터 검증된 고즈넉한 감성 숙소, 왕복 이동 수단까지 꼼꼼하게 전부 준비되어 있습니다.
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-variant/50 flex items-center gap-2 text-secondary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>준비 없이 가볍게 몸만 오시면 됩니다</span>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="p-8 rounded-2xl bg-surface-container-low shadow-sm hover:shadow-md transition-all flex flex-col justify-between">
+<div>
+<div class="w-12 h-12 rounded-xl bg-surface-container-highest flex items-center justify-center text-xl mb-6">
+              🤝
+            </div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3 leading-snug">
+              "처음 보는 사람들과 잘 어울릴 수 있을까 걱정돼요"
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant leading-relaxed">
+              전문 동행 호스트의 섬세한 배려와 아이스브레이킹으로 어색함은 금세 지워지고, 깊고 잔잔한 대화가 자연스레 피어납니다.
+            </p>
+</div>
+<div class="mt-8 pt-6 border-t border-surface-variant/50 flex items-center gap-2 text-tertiary font-label-md text-label-md">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>전문 호스트 상시 동행 케어</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. THIS AUTUMN'S DESTINATIONS -->
+<section class="w-full py-20 lg:py-28 bg-surface-container-low" id="destinations-section">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Section Title & Tabs -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
+<div>
+<span class="font-label-md text-label-md text-secondary font-semibold tracking-wider uppercase mb-2 block">Curated Journeys</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-3">
+            이번 가을, 함께 떠날 여행지
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant">
+            가을 정취를 가장 온전히 느낄 수 있는 엄선된 소규모 코스입니다.
+          </p>
+</div>
+<!-- Filter Tabs -->
+<div class="flex items-center gap-2 overflow-x-auto pb-2 md:pb-0" id="filter-tab-container">
+<button class="tab-btn px-5 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md transition-all shadow-sm" type="button">
+            전체
+          </button>
+<button class="tab-btn px-5 py-2.5 rounded-full bg-surface text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" type="button">
+            11월 첫째 주
+          </button>
+<button class="tab-btn px-5 py-2.5 rounded-full bg-surface text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" type="button">
+            11월 둘째 주
+          </button>
+<button class="tab-btn px-5 py-2.5 rounded-full bg-surface text-on-surface-variant hover:text-on-surface font-label-md text-label-md transition-all" type="button">
+            11월 셋째 주
+          </button>
+</div>
+</div>
+<!-- Destination Cards Grid (3 Columns) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1: 설악산 -->
+<div class="rounded-3xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Magnificent panoramic view of Seoraksan Ju-jeon-gol valley in autumn, dramatic granite peaks framed by fiery crimson maples, orange birch leaves, clear mountain creek reflecting the golden autumn foliage, sunny crisp afternoon light, natural Korean mountain landscape." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoQlX-bqObyMItvBYM8kquzXEBcg2NGAU2gwnA95-Xnzxcv0Qa4KgXYmuTVPQ4IJrK44LLo1qXVun_ka0BxlO-Wgp_JgZOFZko5mWpQ8anNSFPc7h0x6v7y-1AhGpNme1c7ebs_B4FLLZ6uvWuZE2XY1dtY5xcRad788XM7XXK2QCIpwdMN0ShVXraA8wbWAbbLsm5e6sU3qJoSNjCVm5izEnzPyNW1eYFhUsB1Fq1"/>
+<div class="absolute top-4 left-4">
+<span class="px-3.5 py-1.5 rounded-full bg-secondary text-on-secondary font-label-sm text-label-sm font-semibold shadow-sm">
+                잔여 4석
+              </span>
+</div>
+<div class="absolute bottom-3 right-4 px-3 py-1 rounded-full bg-black/50 backdrop-blur-sm text-white font-label-sm text-label-sm">
+              정원 12명
+            </div>
+</div>
+<div class="p-6 lg:p-7 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md mb-2">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>11월 7일 ~ 8일 (1박 2일)</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-on-surface mb-3 group-hover:text-primary transition-colors">
+                설악산 주전골 단풍 트레킹
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed mb-6">
+                설악의 비경과 붉게 물든 단풍 계곡을 여유롭게 거니는 감성 트레킹. 따스한 산장 차담회와 밤하늘 별 보기가 포함되어 있어요.
+              </p>
+</div>
+<div class="pt-5 border-t border-surface-variant flex items-center justify-between">
+<div>
+<span class="text-xs text-on-surface-variant block">1인 참가비</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">185,000원</span>
+</div>
+<a class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" data-destination="seorak" data-path="apply-form" data-schedule="nov-w2" href="#">
+                신청하기
+              </a>
+</div>
+</div>
+</div>
+<!-- Card 2: 순천만 -->
+<div class="rounded-3xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Breathtaking Suncheon Bay wetland reeds swaying gracefully under warm amber sunset, expansive silver-gold reed fields reflecting warm twilight, wooden boardwalk winding gently, traditional Korean fortress village Naganeupseong in distance, serene and poetic autumnal scenery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfl50N-fc2xzaY9dQhW5ZOJRUjYBWMg_Cpcy_27ztb3P7kjzBU3YpgEfiFqG0RHD6rf5ozpJiY5lEDsvq1DTTE1A7I95rEf-YI5Exs3mz8UHwsqf0nixR6f66gFmWuRCH-Zy0zgdTDh16erllRJkoz-3LOSpGfGeI3nQyli5hWuheW2bhUCXg9gffM8-J4tHQwHTU53VIHVV4f6ln39n-f0sxCBJU_ILCyfQylEWfN"/>
+<div class="absolute top-4 left-4">
+<span class="px-3.5 py-1.5 rounded-full bg-secondary-fixed text-on-secondary-fixed font-label-sm text-label-sm font-semibold shadow-sm">
+                잔여 6석
+              </span>
+</div>
+<div class="absolute bottom-3 right-4 px-3 py-1 rounded-full bg-black/50 backdrop-blur-sm text-white font-label-sm text-label-sm">
+              정원 14명
+            </div>
+</div>
+<div class="p-6 lg:p-7 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md mb-2">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>11월 14일 (당일 코스)</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-on-surface mb-3 group-hover:text-primary transition-colors">
+                순천만 은빛 갈대밭 & 낙안읍성
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed mb-6">
+                노을빛으로 물드는 드넓은 갈대숲 산책과 고즈넉한 전통 읍성의 여유. 낭만 가득한 가을 피크닉 세트가 함께 제공됩니다.
+              </p>
+</div>
+<div class="pt-5 border-t border-surface-variant flex items-center justify-between">
+<div>
+<span class="text-xs text-on-surface-variant block">1인 참가비</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">98,000원</span>
+</div>
+<a class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" data-destination="suncheon" data-path="apply-form" data-schedule="nov-w3" href="#">
+                신청하기
+              </a>
+</div>
+</div>
+</div>
+<!-- Card 3: 남이섬 -->
+<div class="rounded-3xl bg-surface-container-lowest overflow-hidden shadow-sm hover:shadow-lg transition-all duration-300 flex flex-col group">
+<div class="relative h-64 overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Lush golden yellow ginkgo tree tree-lined path in Nami Island during peak autumn, ground blanketed deeply with fallen yellow ginkgo leaves, gentle afternoon sunlight creating long shadows, peaceful quiet atmosphere, soft warm colors." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCPHvXnnbgvcUrvn7ex2bAY3N-JRA9kiyU0zjVKIBetFpZ7dq0AfSbk2GR_JNXnFI6nyhdZ6VNf5rzJ-03ArMpPR7rnVSM66hIyVimEbNIM-hMAy6B6FK3LogohyBdzrqN51i8NYCw61uIpKFIkeTolLgNNCN6KnFb36T30uXF41QPdkzzTSHw25Ehs-3kxEetKCPbHCCxNv8kHqMN7TCFpHJ_vweB3ySRIZssOD30A"/>
+<div class="absolute top-4 left-4">
+<span class="px-3.5 py-1.5 rounded-full bg-error text-on-error font-label-sm text-label-sm font-semibold shadow-sm animate-pulse">
+                마감 임박 (2석)
+              </span>
+</div>
+<div class="absolute bottom-3 right-4 px-3 py-1 rounded-full bg-black/50 backdrop-blur-sm text-white font-label-sm text-label-sm">
+              정원 10명
+            </div>
+</div>
+<div class="p-6 lg:p-7 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-2 text-primary font-label-md text-label-md mb-2">
+<span class="material-symbols-outlined text-[16px]">calendar_today</span>
+<span>11월 21일 (당일 코스)</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-on-surface mb-3 group-hover:text-primary transition-colors">
+                남이섬 황금 은행나무길 산책
+              </h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed mb-6">
+                발밑 가득 바스락거리는 노란 은행잎 길을 따라 걸으며 나누는 따뜻한 대화. 전문 포토그래퍼의 필름 스냅 촬영이 포함됩니다.
+              </p>
+</div>
+<div class="pt-5 border-t border-surface-variant flex items-center justify-between">
+<div>
+<span class="text-xs text-on-surface-variant block">1인 참가비</span>
+<span class="font-headline-sm text-headline-sm text-on-surface font-semibold">89,000원</span>
+</div>
+<a class="px-6 py-2.5 rounded-full bg-primary text-on-primary font-label-md text-label-md hover:bg-primary-container transition-colors shadow-sm" data-destination="nami" data-path="apply-form" data-schedule="nov-w4" href="#">
+                신청하기
+              </a>
+</div>
+</div>
+</div>
+</div>
+<!-- More Destinations Banner -->
+<div class="mt-12 text-center">
+<a class="inline-flex items-center gap-2 font-label-lg text-label-lg text-primary hover:text-primary-container font-semibold transition-colors" href="#">
+<span>모든 가을 여행지 일정표 보기</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 5. HOW TO APPLY TIMELINE -->
+<section class="w-full py-20 lg:py-28 bg-surface">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-20">
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wider uppercase mb-2 block">Simple 4 Steps</span>
+<h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-surface mb-3">
+          신청은 이렇게 진행돼요
+        </h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+          복잡한 준비 없이, 4단계로 쉽고 간편하게
+        </p>
+</div>
+<!-- Timeline Container -->
+<div class="relative">
+<!-- Connecting Line (Desktop) -->
+<div class="hidden lg:block absolute top-1/2 left-12 right-12 h-0.5 bg-surface-variant -translate-y-8 z-0"></div>
+<!-- 4 Step Cards -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 relative z-10">
+<!-- Step 1 -->
+<div class="bg-surface-container-low p-7 rounded-2xl flex flex-col items-center text-center shadow-sm relative group hover:shadow-md transition-shadow">
+<div class="w-14 h-14 rounded-full bg-primary text-on-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center mb-6 shadow-md ring-4 ring-surface">
+              1
+            </div>
+<span class="font-label-sm text-label-sm text-primary font-semibold mb-1">STEP 01</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">여행지 선택</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              가을 정취 가득한 취향 맞춤 여행 코스를 둘러보고 마음에 닿는 곳을 골라보세요.
+            </p>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-low p-7 rounded-2xl flex flex-col items-center text-center shadow-sm relative group hover:shadow-md transition-shadow">
+<div class="w-14 h-14 rounded-full bg-secondary text-on-secondary font-headline-sm text-headline-sm font-bold flex items-center justify-center mb-6 shadow-md ring-4 ring-surface">
+              2
+            </div>
+<span class="font-label-sm text-label-sm text-secondary font-semibold mb-1">STEP 02</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">날짜·인원 선택</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              원하는 출발 일정과 동행 인원을 선택하세요. 혼자 신청해도 전혀 부담 없어요.
+            </p>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-low p-7 rounded-2xl flex flex-col items-center text-center shadow-sm relative group hover:shadow-md transition-shadow">
+<div class="w-14 h-14 rounded-full bg-surface-container-highest text-on-surface font-headline-sm text-headline-sm font-bold flex items-center justify-center mb-6 shadow-md ring-4 ring-surface">
+              3
+            </div>
+<span class="font-label-sm text-label-sm text-tertiary font-semibold mb-1">STEP 03</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">신청서 작성</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              간단한 자기소개와 여행 취향, 선호하는 템포를 편안하게 작성해 주세요.
+            </p>
+</div>
+<!-- Step 4 -->
+<div class="bg-surface-container-low p-7 rounded-2xl flex flex-col items-center text-center shadow-sm relative group hover:shadow-md transition-shadow">
+<div class="w-14 h-14 rounded-full bg-primary-container text-on-primary-container font-headline-sm text-headline-sm font-bold flex items-center justify-center mb-6 shadow-md ring-4 ring-surface">
+              4
+            </div>
+<span class="font-label-sm text-label-sm text-primary-container font-semibold mb-1">STEP 04</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-3">확정 & 함께 출발</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+              동행 확정 알림톡 수신 후 상세 준비물 확인과 함께 설레는 마음으로 만나요!
+            </p>
+</div>
+</div>
+</div>
+<!-- Quick Action Callout in Timeline -->
+<div class="mt-16 p-8 rounded-3xl bg-secondary-fixed/30 flex flex-col sm:flex-row items-center justify-between gap-6">
+<div class="flex items-center gap-4 text-center sm:text-left">
+<div class="w-12 h-12 rounded-full bg-secondary-fixed flex items-center justify-center text-on-secondary-fixed flex-shrink-0 mx-auto sm:mx-0">
+<span class="material-symbols-outlined text-[24px]">chat</span>
+</div>
+<div>
+<h4 class="font-headline-sm text-label-lg text-on-secondary-fixed font-bold">궁금한 점이 남아있으신가요?</h4>
+<p class="font-body-sm text-body-sm text-on-secondary-fixed-variant">호스트와 1:1로 코스나 분위기에 대해 먼저 편하게 이야기 나눠보세요.</p>
+</div>
+</div>
+<a class="px-6 py-3 rounded-full bg-surface-container-lowest text-on-surface font-label-md text-label-md hover:bg-surface-container transition-colors shadow-sm whitespace-nowrap" href="#">
+          카카오톡 문의하기
+        </a>
+</div>
+</div>
+</section>
+<!-- Interactive JavaScript for Filter Tabs -->
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const tabContainer = document.getElementById('filter-tab-container');
+      if (!tabContainer) return;
+      
+      const buttons = tabContainer.querySelectorAll('.tab-btn');
+      buttons.forEach(button => {
+        button.addEventListener('click', () => {
+          buttons.forEach(btn => {
+            btn.classList.remove('bg-primary', 'text-on-primary', 'shadow-sm');
+            btn.classList.add('bg-surface', 'text-on-surface-variant');
+          });
+          button.classList.remove('bg-surface', 'text-on-surface-variant');
+          button.classList.add('bg-primary', 'text-on-primary', 'shadow-sm');
+        });
+      });
+    });
+  </script>
+</div></main>
+<!-- APPLY FORM MODAL (구글 시트 연동) -->
+<div class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4" id="apply-modal">
+<div class="w-full max-w-lg max-h-[90vh] overflow-y-auto rounded-3xl bg-surface-container-lowest shadow-2xl p-7 lg:p-9 relative">
+<button class="absolute top-5 right-5 w-9 h-9 rounded-full hover:bg-surface-container flex items-center justify-center text-on-surface-variant" id="apply-close" type="button">
+<span class="material-symbols-outlined text-[22px]">close</span>
+</button>
+<!-- 신청서 -->
+<div id="apply-form-view">
+<span class="font-label-md text-label-md text-primary font-semibold tracking-wider uppercase mb-2 block">Apply</span>
+<h2 class="font-headline-md text-headline-sm text-on-surface mb-1">가을 동행 신청서</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6">작성해 주신 연락처로 호스트가 확정 안내를 드려요.</p>
+<form class="flex flex-col gap-4" id="apply-form">
+<label class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">성함 <span class="text-primary">*</span></span>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant focus:border-primary focus:outline-none font-body-md text-body-md" name="name" placeholder="홍길동" required="" type="text"/>
+</label>
+<label class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">연락처 <span class="text-primary">*</span></span>
+<input class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant focus:border-primary focus:outline-none font-body-md text-body-md" inputmode="tel" name="phone" pattern="0\d{1,2}-?\d{3,4}-?\d{4}" placeholder="010-1234-5678" required="" title="010-1234-5678 형식으로 입력해 주세요" type="tel"/>
+</label>
+<label class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">여행지 <span class="text-primary">*</span></span>
+<select class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant focus:border-primary focus:outline-none font-body-md text-body-md" name="destination" required="">
+<option value="">여행지를 선택해 주세요</option>
+<option value="seorak">설악산 주전골 단풍 트레킹</option>
+<option value="suncheon">순천만 은빛 갈대밭 & 낙안읍성</option>
+<option value="nami">남이섬 황금 은행나무길</option>
+<option value="daegwallyeong">대관령 가을 바람 솔숲길</option>
+</select>
+</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<label class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">일정 <span class="text-primary">*</span></span>
+<select class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant focus:border-primary focus:outline-none font-body-md text-body-md" name="schedule" required="">
+<option value="">날짜 선택</option>
+<option value="nov-w1">11월 1주차 (11.02 ~ 11.03)</option>
+<option value="nov-w2">11월 2주차 (11.07 ~ 11.08)</option>
+<option value="nov-w3">11월 3주차 (11.14 당일)</option>
+<option value="nov-w4">11월 4주차 (11.21 당일)</option>
+</select>
+</label>
+<label class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">참여 인원</span>
+<select class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant focus:border-primary focus:outline-none font-body-md text-body-md" name="people">
+<option value="1">1인 (혼자 신청)</option>
+<option value="2">2인 (친구·동반 1인)</option>
+<option value="team">소규모 단체 문의</option>
+</select>
+</label>
+</div>
+<label class="flex flex-col gap-1.5">
+<span class="font-label-md text-label-md text-on-surface">요청사항</span>
+<textarea class="w-full px-4 py-3 rounded-xl bg-surface-container-low border border-outline-variant focus:border-primary focus:outline-none font-body-md text-body-md resize-none" name="memo" placeholder="여행 취향, 알레르기, 궁금한 점 등을 자유롭게 적어주세요" rows="3"></textarea>
+</label>
+<label class="flex items-start gap-2 font-body-sm text-body-sm text-on-surface-variant">
+<input class="mt-1 accent-[#943c14]" required="" type="checkbox"/>
+<span>신청 확인 연락을 위한 개인정보(성함, 연락처) 수집·이용에 동의합니다. <span class="text-primary">*</span></span>
+</label>
+<p class="hidden font-body-sm text-body-sm text-error" id="apply-error">전송에 실패했어요. 잠시 후 다시 시도해 주세요.</p>
+<button class="mt-2 w-full px-8 py-4 rounded-full bg-primary text-on-primary font-label-lg text-label-lg hover:bg-primary-container transition-all flex items-center justify-center gap-2 shadow-sm disabled:opacity-60" id="apply-submit" type="submit">
+<span>신청서 제출하기</span>
+<span class="material-symbols-outlined text-[18px]">send</span>
+</button>
+</form>
+</div>
+<!-- 완료 화면 -->
+<div class="hidden flex-col items-center text-center py-8" id="apply-done-view">
+<div class="w-16 h-16 rounded-full bg-primary-fixed flex items-center justify-center text-3xl mb-5">🍁</div>
+<h2 class="font-headline-md text-headline-sm text-on-surface mb-2">신청이 완료되었어요!</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8">입력하신 연락처로 곧 확정 안내를 드릴게요.<br/>함께 걸을 가을을 기다릴게요.</p>
+<button class="px-8 py-3 rounded-full bg-surface-container text-on-surface font-label-lg text-label-lg hover:bg-surface-variant transition-all" id="apply-done-close" type="button">닫기</button>
+</div>
+</div>
+</div>
+<script>
+    // Apps Script 웹 앱 배포 후 받은 URL을 여기에 붙여넣으세요.
+    const SHEET_WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbyziypxOS2Fvq2aIY75_twkGCKuasihBhM028aTI7Sl84ndgaKvL5MwBQ5pEQhDVqqO/exec';
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const modal = document.getElementById('apply-modal');
+      const form = document.getElementById('apply-form');
+      const formView = document.getElementById('apply-form-view');
+      const doneView = document.getElementById('apply-done-view');
+      const errorMsg = document.getElementById('apply-error');
+      const submitBtn = document.getElementById('apply-submit');
+
+      function openModal(preset) {
+        form.reset();
+        errorMsg.classList.add('hidden');
+        formView.classList.remove('hidden');
+        doneView.classList.add('hidden');
+        doneView.classList.remove('flex');
+        Object.keys(preset || {}).forEach(key => {
+          if (preset[key]) form.elements[key].value = preset[key];
+        });
+        modal.classList.remove('hidden');
+        modal.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+        form.elements.name.focus();
+      }
+
+      function closeModal() {
+        modal.classList.add('hidden');
+        modal.classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      // 헤더·히어로·여행지 카드의 "여행 신청하기 / 신청하기" 버튼
+      document.querySelectorAll('[data-path="apply-form"]').forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          openModal({ destination: link.dataset.destination, schedule: link.dataset.schedule });
+        });
+      });
+
+      // 히어로 하단 빠른 신청 바
+      document.getElementById('quick-apply-btn').addEventListener('click', () => {
+        openModal({
+          destination: document.getElementById('quick-destination').value,
+          schedule: document.getElementById('quick-schedule').value,
+          people: document.getElementById('quick-people').value
+        });
+      });
+
+      document.getElementById('apply-close').addEventListener('click', closeModal);
+      document.getElementById('apply-done-close').addEventListener('click', closeModal);
+      modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+      form.addEventListener('submit', async e => {
+        e.preventDefault();
+        errorMsg.classList.add('hidden');
+        submitBtn.disabled = true;
+
+        // 시트에는 코드값 대신 화면에 보이는 한글 문구로 저장
+        const optionText = name => form.elements[name].selectedOptions[0].text;
+        const data = new URLSearchParams({
+          name: form.elements.name.value.trim(),
+          phone: form.elements.phone.value.trim(),
+          destination: optionText('destination'),
+          schedule: optionText('schedule'),
+          people: optionText('people'),
+          memo: form.elements.memo.value.trim()
+        });
+
+        try {
+          await fetch(SHEET_WEBAPP_URL, { method: 'POST', mode: 'no-cors', body: data });
+          formView.classList.add('hidden');
+          doneView.classList.remove('hidden');
+          doneView.classList.add('flex');
+        } catch (err) {
+          errorMsg.classList.remove('hidden');
+        } finally {
+          submitBtn.disabled = false;
+        }
+      });
+    });
+  </script><footer class="w-full bg-surface-container-low py-space-xl"><div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-xs"><span class="material-symbols-outlined text-primary text-[22px]">eco</span><span class="font-headline-sm text-headline-sm text-on-surface">가을동행</span></div><p class="font-body-sm text-body-sm text-on-surface-variant text-center md:text-left">가을의 정취와 소중한 인연을 잇는 따뜻한 소규모 감성 여행 플랫폼.</p><p class="font-label-sm text-label-sm text-on-surface-variant">© 2024 가을동행. All rights reserved.</p></div></footer></body></html>
